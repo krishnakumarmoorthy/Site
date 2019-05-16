@@ -10,9 +10,9 @@
 		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
 		<link rel = "stylesheet" type = "text/css" href = "css/container.css">
 		<script type="text/javascript" src="js/fun.js"></script>
-
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	</head>
-	<body>
+	<body img src="images/bokeh_car_lights_bg.jpg">
 				<div class="topnav" id="myTopnav">
 				  <a href="index.html">Home</a>
 				  <div class="dropdown">
@@ -29,7 +29,7 @@
 				  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myNavigator()">&#9776;</a>
 				</div>
 		<!-- Main -->
-			<section>
+			<section id="sprayerSection">
           <br>
           <div><strong><font color="black">
 					<h4>SPRAYER BOT</h4>
@@ -49,8 +49,24 @@
   </div>
 </div>
 </section>
-	<footer>
-		<p>Copyright &#169; Enjen  Designed By: Enjen    &#174; All Rights Reserved </p>
- </footer>
+<button class="open-buttonbutsp" onclick="openFormSprayer()" id="openFormbut">Need a Quote???</button>
+<div class="form-popup" id="myForm">
+<form action="mail.php" method="post" class="form-container" >
+<h1>Request a Quote</h1>
+<label for="name"><b>Name</b></label>
+<input type="text" placeholder="Enter your Name" name="name" id="name">
+<label for="email"><b>Email</b></label>
+<input type="text" placeholder="Enter Email" name="email" id="email" >
+<label for="contact"><b>Contact Number</b></label>
+<input type="text" placeholder="Enter Contact number" name="contact" id="contact">
+<label for="message"><b>Requirements</b></label>
+<input type="text" placeholder="Enter Your requirements" name="message" id="message" required>
+<button type="submit" class="btn">Send</button>
+<button type="button" class="btn cancel" onclick="closeFormSprayer()">Close</button>
+</form>
+</div>
+<footer id="foot">
+	  <p>Copyright &#169; 2017.All Rights Reserved.Enjen      Designed By Enjen     </p>
+</footer>
 	</body>
 </html>

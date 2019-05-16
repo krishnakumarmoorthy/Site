@@ -6,6 +6,36 @@ function myNavigator() {
     x.className = "topnav";
   }
 }
+function openFormContacts() {
+    document.getElementById("myForm").style.display = "block";
+    document.getElementById("openFormbut").style.display = "none";
+    document.getElementById("address").style.opacity = "0.5";
+    document.getElementById("myTopnav").style.opacity = "0.5";
+    document.getElementById("foot").style.opacity="0.5";
+}
+function openFormSprayer()
+{
+document.getElementById("myTopnav").style.opacity = "0.5";
+document.getElementById("sprayerSection").style.opacity = "0.5";
+document.getElementById("foot").style.opacity="0.5";
+document.getElementById("myForm").style.display = "block";
+document.getElementById("openFormbut").style.display = "none";
+}
+function closeFormSprayer()
+{
+document.getElementById("myTopnav").style.opacity = "1";
+document.getElementById("sprayerSection").style.opacity = "1";
+document.getElementById("foot").style.opacity="1";
+document.getElementById("myForm").style.display = "none";
+document.getElementById("openFormbut").style.display = "block";
+}
+function closeFormContacts() {
+  document.getElementById("openFormbut").style.display = "block";
+  document.getElementById("myForm").style.display = "none";
+  document.getElementById("address").style.opacity = "1";
+  document.getElementById("myTopnav").style.opacity = "1";
+  document.getElementById("foot").style.opacity="1";
+  }
 function sprayerSpecs(a) {
    if(a===1)
    {
@@ -17,7 +47,7 @@ function sprayerSpecs(a) {
    }
    else if(a===3)
    {
-   document.getElementById("content").innerHTML="<div>Nozzle positions, motor speed and nozzle pressure are Presetted by operator Guided for path by operator.<br><a href='https://drive.google.com/file/d/1QT9_3zMkqhIgcerI3oe1K2DNDDVNrrX_/view' target='_blank'><strong><u><font color='black'>Download Brochure</font></u></strong></a></div><iframe width='560' height='315' src='https://www.youtube.com/embed/NKa-OhtSLaI' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>";
+   document.getElementById("content").innerHTML="<div>Nozzle positions, motor speed and nozzle pressure are Presetted by operator Guided for path by operator.<br><a href='https://drive.google.com/file/d/1QT9_3zMkqhIgcerI3oe1K2DNDDVNrrX_/view' target='_blank'><strong><u><font color='black'>Download Brochure</font></u></strong></a></div><br><iframe width='560' height='315' src='https://www.youtube.com/embed/NKa-OhtSLaI' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>";
    }
    else if(a===4)
    {
