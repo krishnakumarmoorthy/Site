@@ -17,9 +17,13 @@ function sprayerSpecs(a) {
    }
    else if(a===3)
    {
-   document.getElementById("content").innerHTML="<div>Nozzle positions, motor speed and nozzle pressure are Presetted by operator Guided for path by operator.<br><a href='https://drive.google.com/file/d/1QT9_3zMkqhIgcerI3oe1K2DNDDVNrrX_/view' target='_blank'><strong><u><font color='black'>Download Brochure</font></u></strong></a></div>";
+   document.getElementById("content").innerHTML="<div>Nozzle positions, motor speed and nozzle pressure are Presetted by operator Guided for path by operator.<br><a href='https://drive.google.com/file/d/1QT9_3zMkqhIgcerI3oe1K2DNDDVNrrX_/view' target='_blank'><strong><u><font color='black'>Download Brochure</font></u></strong></a></div><iframe width='560' height='315' src='https://www.youtube.com/embed/NKa-OhtSLaI' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>";
    }
    else if(a===4)
+   {
+   document.getElementById("content").innerHTML="<div><li>Intelligent spraying i.e it sprays only on plantations and not in the gap.</li><li>It is battery operated hence no pollution.</li><li>It is attached in a vehicle which is powered no need for pushing it.</li><li>It has multiple nozzles which can be adjusted based on the height of the plantations.</li><li>20-30 tanks can be sprayed on one full charged.</li></div>";
+   }
+   else if(a===5)
    {
    document.getElementById("content").innerHTML="<li>Reduces the  cost.</li><li>Less manpower as machine is semi automated.</li><li>Uses battery power,causes no pollution.</li>";
    }
