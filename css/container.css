@@ -11,6 +11,11 @@
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     grid-template-rows: repeat(2, 100px);
 }
+.imgresponsive {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
 .center {
   margin:0 auto;
   text-align: center;

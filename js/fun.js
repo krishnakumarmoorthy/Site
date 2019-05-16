@@ -6,10 +6,10 @@ function myNavigator() {
     x.className = "topnav";
   }
 }
-function specs(a) {
+function sprayerSpecs(a) {
    if(a===1)
    {
-   document.getElementById("content").innerHTML="<div><li>High Expenditure</li><li>very injurious to health for the human who                                  sprays</li><li>takes a lot of human energy.</li></div>";
+   document.getElementById("content").innerHTML="<div><li>High Expenditure</li><li>very injurious to health for the human who sprays</li><li>takes a lot of human energy.</li></div>";
    }
    else if(a===2)
    {
@@ -24,3 +24,21 @@ function specs(a) {
    document.getElementById("content").innerHTML="<li>Reduces the  cost.</li><li>Less manpower as machine is semi automated.</li><li>Uses battery power,causes no pollution.</li>";
    }
    };
+function pickerSpecs(a) {
+      if(a===1)
+      {
+      document.getElementById("content").innerHTML="<div><li>High Demand of labour</li><li>takes a lot of human energy.</li><li>Efficiency of picking is not very much.</div>";
+      }
+      else if(a===2)
+      {
+      document.getElementById("content").innerHTML="<div><li>A Automated Multi-arm robotic machine that can be operated with less human energy and which picks the cotton using Artificial Intelligence and image processing.</li></div>";
+      }
+      else if(a===3)
+      {
+      document.getElementById("content").innerHTML="<div><li>The Machine is navigated with the help of human and stops in front of cotton plant.</li><li>Then ,it starts scanning the plant and detects cotton.</li><li>Using the AI logics, the robotic arm move upto the cotton and picks it.</li><li>It has multiple arms that runs independently.</li></div>";
+      }
+      else if(a===4)
+      {
+      document.getElementById("content").innerHTML="<li>Solves the labour problem.</li><li>Less manpower as machine is automated.</li><li>Increase the efficiency of cotton picked.</li>";
+      }
+  };
