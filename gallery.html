@@ -7,6 +7,8 @@
   <meta name="description" content="" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="keywords" content="Enjen , IT traning, Linux, C, Java, FrontEnd, Android Development, Testing, Network Training" />
+  <link rel = "stylesheet" type = "text/css" href = "css/container.css">
+  <script type="text/javascript" src="js/fun.js"></script>
   <!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
 <style>
 div.gallery {
@@ -31,21 +33,21 @@ div.desc {
   box-sizing: border-box;
 }
 
-.responsive {
+.responsived {
   padding: 0 6px;
   float: left;
   width: 24.99999%;
 }
 
 @media only screen and (max-width: 700px) {
-  .responsive {
+  .responsived {
     width: 49.99999%;
     margin: 6px 0;
   }
 }
 
 @media only screen and (max-width: 500px) {
-  .responsive {
+  .responsived {
     width: 100%;
   }
 }
@@ -58,10 +60,24 @@ div.desc {
 </style>
 </head>
 <body>
-
+  <div class="topnav" id="myTopnav">
+    <a href="index.html" >Home</a>
+    <div class="dropdown">
+      <button class="dropbtn">Products
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="sprayerBot.html">SprayerBot</a>
+        <a href="pickerBot.html">PickerBot</a>
+      </div>
+    </div>
+    <a href="contact.html">Contact</a>
+    <a href="#" class="active">Gallery</a>
+    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myNavigator()">&#9776;</a>
+  </div>
 <h2>Enjen Technologies Gallery</h2>
 
-<div class="responsive">
+<div class="responsived">
   <div class="gallery">
     <a target="_blank" href="images/mou.jpg">
       <img src="images/mou.jpg" alt="MoU" width="600" height="400">
@@ -70,7 +86,7 @@ div.desc {
   </div>
 </div>
 <!--
-<div class="responsive">
+<div class="responsived">
   <div class="gallery">
     <a target="_blank" href="img_forest.jpg">
       <img src="img_forest.jpg" alt="Forest" width="600" height="400">
@@ -79,7 +95,7 @@ div.desc {
   </div>
 </div>
 
-<div class="responsive">
+<div class="responsived">
   <div class="gallery">
     <a target="_blank" href="img_lights.jpg">
       <img src="img_lights.jpg" alt="Northern Lights" width="600" height="400">
@@ -88,7 +104,7 @@ div.desc {
   </div>
 </div>
 
-<div class="responsive">
+<div class="responsived">
   <div class="gallery">
     <a target="_blank" href="img_mountains.jpg">
       <img src="img_mountains.jpg" alt="Mountains" width="600" height="400">
