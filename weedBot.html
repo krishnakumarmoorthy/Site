@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Products Developed by Enjen Technologies</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="keywords" content="Enjen , IT traning, Linux, C, Java, FrontEnd, Android Development, Testing, Network Training" />
+		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
+		<link rel = "stylesheet" type = "text/css" href = "css/container.css">
+		<script type="text/javascript" src="js/fun.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body
+{
+color:black;
+}
+.foot
+{
+position:absolute;
+bottom:0px;
+display:block;
+}
+</style>
+</head>
+<body>
+
+				<div class="topnav" id="myTopnav">
+				  <a href="index.html">Home</a>
+				  <div class="dropdown">
+				    <button class="dropbtn">Products
+				      <i class="fa fa-caret-down"></i>
+				    </button>
+				    <div class="dropdown-content">
+				      <a href="#" class="active">Sprayer Bot</a>
+				      <a href="pickerBot.html">Picker Bot</a>
+				    </div>
+				  </div>
+				  <a href="contact.html">Contact</a>
+				  <a href="gallery.html">Gallery</a>
+				  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myNavigator()">&#9776;</a>
+				</div>
+<br>
+		<!-- Main -->
+			<section id="sprayerSection">
+
+          <div><strong><font color="black">
+					<h2>WEEDER BOT</h2>
+					<div><img src="images/weeder.jpg" class="imgresponsive" width="600" height="400"style="margin-right:15px;float:left">
+   			  <button onclick="weederSpecs(1)">Problems</button>
+          <button onclick="weederSpecs(2)">Solution</button>
+          <button onclick="weederSpecs(3)">Working</button>
+					<button onclick="weederSpecs(4)">Features</button>
+          <button onclick="weederSpecs(5)">Benefits</button>
+          <div id="content">
+						<div style="border:solid;color:black;">   <ul>
+							<li>High expenditure.</li>
+					    <li>Labour scarcity.</li>
+							<li>Takes a lot of human energy.</li></ul>
+						</div>
+					</div>
+  </div>
+</div>
+</section>
+			<button class="open-button" onclick="openFormSprayer()" id="openFormbut" style="position:relative;">BUY NOW!!!</button>
+			<div class="form-popup" id="myForm">
+			<form action="mail.php" method="post" class="form-container" style="color:black;">
+			<h1>Get the best price</h1>
+			<label for="name"><b>Name</b></label>
+			<input type="text" placeholder="Enter your Name" name="name" id="name">
+			<label for="email"><b>Email</b></label>
+			<input type="text" placeholder="Enter Email" name="email" id="email" >
+			<label for="contact"><b>Contact Number</b></label>
+			<input type="text" placeholder="Enter Contact number" name="contact" id="contact">
+			<label for="message"><b>Requirements</b></label>
+			<input type="text" placeholder="Enter Your requirements" name="message" id="message" required>
+			<button type="submit" class="btn">Send</button>
+			<button type="button" class="btn cancel" onclick="closeFormSprayer()">Close</button>
+			</form>
+		</div>
+			<br><br><br><br><br><br><br><br><br><br>
+<section id="foott">
+<div class="foot">
+  <a href="https://www.youtube.com/channel/UCcF3DHT8LNFruqP0Ihfx0sw"><i class="fa fa-youtube fa-3x"></i></a>
+	  <p style="color:black;">Copyright &#169; 2017.All Rights Reserved.Enjen      Designed By Enjen     </p>
+</div>
+</section>
+	</body>
+</html>
