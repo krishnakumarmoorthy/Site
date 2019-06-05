@@ -11,8 +11,21 @@
 		<link rel = "stylesheet" type = "text/css" href = "css/container.css">
 		<script type="text/javascript" src="js/fun.js"></script>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	</head>
-	<body img src="images/bokeh_car_lights_bg.jpg">
+<style>
+body
+{
+color:black;
+}
+.foot
+{
+position:absolute;
+bottom:0px;
+display:block;
+}
+</style>
+</head>
+<body>
+
 				<div class="topnav" id="myTopnav">
 				  <a href="index.html">Home</a>
 				  <div class="dropdown">
@@ -20,19 +33,20 @@
 				      <i class="fa fa-caret-down"></i>
 				    </button>
 				    <div class="dropdown-content">
-				      <a href="#" class="active">SprayerBot</a>
-				      <a href="pickerBot.html">PickerBot</a>
+				      <a href="#" class="active">Sprayer Bot</a>
+				      <a href="pickerBot.html">Picker Bot</a>
 				    </div>
 				  </div>
 				  <a href="contact.html">Contact</a>
 				  <a href="gallery.html">Gallery</a>
 				  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myNavigator()">&#9776;</a>
 				</div>
+<br>
 		<!-- Main -->
 			<section id="sprayerSection">
-          <br>
+          
           <div><strong><font color="black">
-					<h4>SPRAYER BOT</h4>
+					<h2>SPRAYER BOT</h2>
 					<div><img src="images/wb_office_org.jpg" class="imgresponsive" width="600" height="400"style="margin-right:15px;float:left">
    			  <button onclick="sprayerSpecs(1)">Problems</button>
           <button onclick="sprayerSpecs(2)">Solution</button>
@@ -40,33 +54,38 @@
 					<button onclick="sprayerSpecs(4)">Features</button>
           <button onclick="sprayerSpecs(5)">Benefits</button>
           <div id="content">
-						<div>
-							<li>High Expenditure</li>
-							<li>very injurious to health for the human who sprays</li>
-							<li>takes a lot of human energy.</li>
+						<div style="border:solid;color:black;">   <ul>
+							<li>High expenditure</li>
+							<li>Very injurious to health for the human who sprays</li>
+							<li>Takes a lot of human energy.</li></ul>
 						</div>
 					</div>
   </div>
 </div>
 </section>
-<button class="open-buttonbutsp" onclick="openFormSprayer()" id="openFormbut">Need a Quote???</button>
-<div class="form-popup" id="myForm">
-<form action="mail.php" method="post" class="form-container" >
-<h1>Request a Quote</h1>
-<label for="name"><b>Name</b></label>
-<input type="text" placeholder="Enter your Name" name="name" id="name">
-<label for="email"><b>Email</b></label>
-<input type="text" placeholder="Enter Email" name="email" id="email" >
-<label for="contact"><b>Contact Number</b></label>
-<input type="text" placeholder="Enter Contact number" name="contact" id="contact">
-<label for="message"><b>Requirements</b></label>
-<input type="text" placeholder="Enter Your requirements" name="message" id="message" required>
-<button type="submit" class="btn">Send</button>
-<button type="button" class="btn cancel" onclick="closeFormSprayer()">Close</button>
-</form>
+			<button class="open-button" onclick="openFormSprayer()" id="openFormbut" style="position:relative;">BUY NOW!!!</button>
+			<div class="form-popup" id="myForm"> 
+			<form action="mail.php" method="post" class="form-container" style="color:black;"> 			
+			<h1>Get the best price</h1>
+			<label for="name"><b>Name</b></label>
+			<input type="text" placeholder="Enter your Name" name="name" id="name">
+			<label for="email"><b>Email</b></label>
+			<input type="text" placeholder="Enter Email" name="email" id="email" >
+			<label for="contact"><b>Contact Number</b></label>
+			<input type="text" placeholder="Enter Contact number" name="contact" id="contact">
+			<label for="message"><b>Requirements</b></label>
+			<input type="text" placeholder="Enter Your requirements" name="message" id="message" required>
+			<button type="submit" class="btn">Send</button>
+			<button type="button" class="btn cancel" onclick="closeFormSprayer()">Close</button>
+			</form>
+		</div>
+			<br><br><br><br><br><br><br><br><br><br>
+
+<section id="foott">
+<div class="foot">
+  <a href="https://www.youtube.com/channel/UCcF3DHT8LNFruqP0Ihfx0sw"><i class="fa fa-youtube fa-3x"></i></a>
+	  <p style="color:black;">Copyright &#169; 2017.All Rights Reserved.Enjen      Designed By Enjen     </p>
 </div>
-<footer id="foot">
-	  <p>Copyright &#169; 2017.All Rights Reserved.Enjen      Designed By Enjen     </p>
-</footer>
+</section>
 	</body>
 </html>

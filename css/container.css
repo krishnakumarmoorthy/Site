@@ -5,8 +5,12 @@
 .font_size_forH1{
   font-size: 4vw;
 }
+.borderNav{
+border:solid;
+color:black;
+}
 .open-button {
-  background-color: #555;
+  background-color: #008000;
   color: white;
   padding: 16px 20px;
   border: none;
@@ -33,25 +37,22 @@
   position: absolute;
   top:50%;
   left:50%;
-  z-index:999;
+  z-index:999999;
   transform:translate(-50%,-50%);
-  border: 3px solid #f1f1f1;
+  border: 3px solid #000;
 }
-
 /* Add styles to the form container */
 .form-container {
   max-width: 300px;
   padding: 10px;
-  background-color: white;
 }
-
 /* Full-width input fields */
 .form-container input[type=text], .form-container input[type=password] {
   width: 100%;
   padding: 0px;
   margin: 5px 0 22px 0;
   border: none;
-  background: #f1f1f1;
+  background: white;
 }
 
 /* When the inputs get focus, do something */
@@ -83,8 +84,9 @@
 }
 
 body{
+  color:black; 
   /* Location of the image */
-  background-image: url(../images/bgimage.png);
+  /*background-image: url(../images/bgimage.png);*/
 
   /* Background image is centered vertically and horizontally at all times */
   background-position: center center;
@@ -102,14 +104,14 @@ body{
 
   /* Set a background color that will be displayed
      while the background image is loading */
-  background-color: #464646;
+  background-color: #fff;
 }
 body {margin:0;font-family:Arial}
 @media only screen and (max-width: 767px) {
   body {
     /* The file size of this background image is 93% smaller
        to improve page load speed on mobile internet connections */
-    background-image: url(../images/bgimage.png);
+    /*background-image: url(../images/bgimage.png);*/
   }
 }
 .container {
@@ -129,14 +131,16 @@ body {margin:0;font-family:Arial}
   width: 90%;
   padding:50px;
 }
-
-
 .topnav {
   overflow: hidden;
   background-color: #333;
 }
-footer{
-  display:block;
+.foot
+{
+position:relative;
+bottom:0px;
+width:100%;
+text-align:center;
 }
 .topnav a {
   float: left;
@@ -214,7 +218,6 @@ footer{
     display: block;
   }
 }
-
 @media screen and (max-width: 600px) {
   .topnav.responsive {position: relative;}
   .topnav.responsive .icon {
