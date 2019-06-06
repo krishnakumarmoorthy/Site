@@ -6,8 +6,35 @@
   font-size: 4vw;
 }
 .borderNav{
-border:solid;
+border:solid green;
 color:black;
+}
+.five-star-line {
+     height: 20px;
+     background-image: url(img/5-star-rating.png);
+     background-repeat: repeat-x;
+     background-position: center;
+     background-color: transparent;
+     border: none;
+     width: 50%;
+     margin: auto;
+     margin-top: 5%;
+     margin-bottom: 5%;
+ }
+#content
+{
+  border:solid green;
+}
+/*#prodButton1 #prodButton2 #prodButton3 #prodButton4 #prodButton5 #prodButton6 #prodButton7 #prodButton8 #prodButton9 #prodButton10 #prodButton11 #prodButton12 #prodButton13 #prodButton14
+{
+  border:solid;
+  padding:15px 32px;
+}*/
+.prodBt{
+  border:solid green;
+  border-bottom:0px;
+  padding:15px 32px;
+  background-color: white;
 }
 .open-button {
   background-color: #008000;
@@ -84,7 +111,7 @@ color:black;
 }
 
 body{
-  color:black; 
+  color:black;
   /* Location of the image */
   /*background-image: url(../images/bgimage.png);*/
 
@@ -106,7 +133,7 @@ body{
      while the background image is loading */
   background-color: #fff;
 }
-body {margin:0;font-family:Arial}
+body {margin:0;font-family: "Times New Roman", Times, serif;}
 @media only screen and (max-width: 767px) {
   body {
     /* The file size of this background image is 93% smaller
@@ -114,7 +141,7 @@ body {margin:0;font-family:Arial}
     /*background-image: url(../images/bgimage.png);*/
   }
 }
-.container {
+.containerCar {
     display: grid;
     grid-gap: 5px;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));

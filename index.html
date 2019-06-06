@@ -1,39 +1,96 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Home Enjen</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel = "stylesheet" type = "text/css" href = "css/container.css">
-<script type="text/javascript" src="js/fun.js"></script>
-<style>
-.foot
-{
-position:relative;
-width:100%;
-text-align:center;
-bottom:0px;
-}
-body {margin:0;font-family:Times New Roman;color:black;}
-</style>
+  <title>Enjen Technologies</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script type="text/javascript" src="js/fun.js"></script>
+  <link rel = "stylesheet" type = "text/css" href = "css/container.css">
+  <style>
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+    width: 70%;
+    margin: auto;
+  }
+  .foot
+  {
+  position:relative;
+  width:100%;
+  text-align:center;
+  bottom:0px;
+  }
+  body{color:black;}
+  </style>
 </head>
 <body>
-<div class="topnav" id="myTopnav">
-  <a href="#home" class="active">Home</a>
-  <div class="dropdown">
-    <button class="dropbtn">Products
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-      <a href="sprayerBot.html">Sprayer Bot</a>
-      <a href="pickerBot.html">Picker Bot</a>
+  <div class="topnav" id="myTopnav">
+    <a href="#home" class="active">Home</a>
+    <div class="dropdown">
+      <button class="dropbtn">Products
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="sprayerBot.html">Sprayer Bot</a>
+        <a href="pickerBot.html">Picker Bot</a>
+        <a href="weedBot.html">Weeder Bot</a>
+      </div>
     </div>
+    <a href="contact.html">Contact</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myNavigator()">&#9776;</a>
   </div>
-  <a href="contact.html">Contact</a>
-  <a href="gallery.html">Gallery</a>
-  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myNavigator()">&#9776;</a>
-</div>
 <div class="container">
+  <br>
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="images/weeder.jpg" alt="Weeder" width="1080" height="640">
+        <div class="carousel-caption">
+          <h3>Weeder Bot</h3>
+          <p>A battery operated machine to do weeding.</p>
+          <a href="weedBot.html" style="font-size:32px;color:red;background-color:grey;">Buy Now</a>
+        </div>
+      </div>
+      <div class="item">
+        <img src="images/wb_office_org.jpg" alt="Sprayer" width="1080" height="640">
+        <div class="carousel-caption">
+          <h3>Sprayer Bot</h3>
+          <p>A battery operated vehicle to do spraying.</p>
+          <a href="sprayerBot.html" style="font-size:32px;color:red;background-color:grey;">Buy Now</a>
+        </div>
+      </div>
+      <div class="item">
+        <img src="images/cp.jpg" alt="Flower" width="1080" height="640">
+        <div class="carousel-caption">
+          <h3>Picker Bot</h3>
+          <p>A Semi-automous machine that picks cotton using image processing and AI.</p>
+          <a href="pickerBot.html" style="font-size:32px;color:red;background-color:grey;">View Now</a>
+        </div>
+      </div>
+    </div>
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+<div class="containercar">
   <div class="center">
   <h1 class="font_size_forH1">Enjen Technologies</h1>
   <p class="font_size_forP">A start-up working on developing AI powered agri equipments.</p>
@@ -42,9 +99,9 @@ body {margin:0;font-family:Times New Roman;color:black;}
   <br>
   <div class="foot">
   <!--<a href="https://www.facebook.com"><i class="fa fa-facebook-f"></i></a>-->
-  <p><a href="https://www.youtube.com/channel/UCcF3DHT8LNFruqP0Ihfx0sw"><i class="fa fa-youtube fa-3x"></i></a></p>
+  <p><a href="https://www.youtube.com/channel/UCcF3DHT8LNFruqP0Ihfx0sw"><i class="fa fa-youtube fa-2x"></i></a></p>
     <p>Copyright &#169; 2017.All Rights Reserved.Enjen      Designed By Enjen     </p>
-  </div>  
+  </div>
 </div>
 </div>
 </body>

@@ -22,10 +22,13 @@ position:absolute;
 bottom:0px;
 display:block;
 }
+button
+{
+	position:relative;
+}
 </style>
 </head>
 <body>
-
 				<div class="topnav" id="myTopnav">
 				  <a href="index.html">Home</a>
 				  <div class="dropdown">
@@ -35,6 +38,7 @@ display:block;
 				    <div class="dropdown-content">
 				      <a href="#" class="active">Sprayer Bot</a>
 				      <a href="pickerBot.html">Picker Bot</a>
+							<a href="weedBot.html">Weeder Bot</a>
 				    </div>
 				  </div>
 				  <a href="contact.html">Contact</a>
@@ -44,17 +48,18 @@ display:block;
 <br>
 		<!-- Main -->
 			<section id="sprayerSection">
-          
-          <div><strong><font color="black">
-					<h2>SPRAYER BOT</h2>
+          <div><font color="black">
+					<h2 style="text-align:center">SPRAYER BOT</h2>
+					<p style="text-align:center">The Sprayer Bot is a machine that helps the farmers to make the spraying process easier and with less cost.</p>
+					<br><br><br>
 					<div><img src="images/wb_office_org.jpg" class="imgresponsive" width="600" height="400"style="margin-right:15px;float:left">
-   			  <button onclick="sprayerSpecs(1)">Problems</button>
-          <button onclick="sprayerSpecs(2)">Solution</button>
-          <button onclick="sprayerSpecs(3)">Working</button>
-					<button onclick="sprayerSpecs(4)">Features</button>
-          <button onclick="sprayerSpecs(5)">Benefits</button>
+   			  <button id="prodButton1" class="prodBt" onclick="sprayerSpecs(1)">Problems</button>
+          <button id="prodButton2" class="prodBt" onclick="sprayerSpecs(2)">Solution</button>
+          <button id="prodButton3" class="prodBt" onclick="sprayerSpecs(3)">Working</button>
+					<button id="prodButton4" class="prodBt" onclick="sprayerSpecs(4)">Features</button>
+          <button id="prodButton5" class="prodBt" onclick="sprayerSpecs(5)">Benefits</button>
           <div id="content">
-						<div style="border:solid;color:black;">   <ul>
+						<div><ul>
 							<li>High expenditure</li>
 							<li>Very injurious to health for the human who sprays</li>
 							<li>Takes a lot of human energy.</li></ul>
@@ -64,13 +69,13 @@ display:block;
 </div>
 </section>
 			<button class="open-button" onclick="openFormSprayer()" id="openFormbut" style="position:relative;">BUY NOW!!!</button>
-			<div class="form-popup" id="myForm"> 
-			<form action="mail.php" method="post" class="form-container" style="color:black;"> 			
+			<div class="form-popup" id="myForm">
+			<form action="mail.php" method="post" class="form-container" style="color:black;">
 			<h1>Get the best price</h1>
 			<label for="name"><b>Name</b></label>
 			<input type="text" placeholder="Enter your Name" name="name" id="name">
 			<label for="email"><b>Email</b></label>
-			<input type="text" placeholder="Enter Email" name="email" id="email" >
+			<input type="text" placeholder="Enter Email" name="email" id="email">
 			<label for="contact"><b>Contact Number</b></label>
 			<input type="text" placeholder="Enter Contact number" name="contact" id="contact">
 			<label for="message"><b>Requirements</b></label>
@@ -80,11 +85,10 @@ display:block;
 			</form>
 		</div>
 			<br><br><br><br><br><br><br><br><br><br>
-
 <section id="foott">
 <div class="foot">
-  <a href="https://www.youtube.com/channel/UCcF3DHT8LNFruqP0Ihfx0sw"><i class="fa fa-youtube fa-3x"></i></a>
-	  <p style="color:black;">Copyright &#169; 2017.All Rights Reserved.Enjen      Designed By Enjen     </p>
+  <a href="https://www.youtube.com/channel/UCcF3DHT8LNFruqP0Ihfx0sw"><i class="fa fa-youtube fa-2x"></i></a>
+	  <p style="color:black;">Copyright &#169; 2017.All Rights Reserved and Designed By Enjen     </p>
 </div>
 </section>
 	</body>
